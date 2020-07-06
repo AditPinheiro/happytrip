@@ -7,12 +7,12 @@ pipeline{
 
 		agent any
 		stages{
-			stage('Stage: Clean'){
-				steps{
-					echo 'Clean starting...'
-					powershell 'mvn -f happytrip/pom.xml clean'
-				}
-			}
+			//stage('Stage: Clean'){
+			//	steps{
+			//		echo 'Clean starting...'
+			//		powershell 'mvn -f happytrip/pom.xml clean:clean'
+			//	}
+			//}
 			
 			//stage('Stage: Install'){
 			//	steps{
