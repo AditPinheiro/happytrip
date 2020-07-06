@@ -10,23 +10,16 @@ pipeline{
 			stage('Stage: Clean'){
 				steps{
 					echo 'Clean starting...'
-			//		powershell clean'
-			//	}
-			//}
-			
-			//stage('Stage: Compile'){
-			//	steps{
-			//		echo 'Install starting...'
-			//		powershell 'mvn compile'
-			//	}
-			//}
+					powershell 'clean'
+				}
+			}
 
 			stage('Stage: Test'){
 			
 				steps{
 				
 					echo 'Test starting...'
-					powershell 'mvn test'
+					powershell 'mvn surefire:test'
 					echo 'Test ended...'
 				}			 
 
