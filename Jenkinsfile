@@ -2,7 +2,7 @@ pipeline{
 
 		tools{
 			jdk 'JAVA'
-				maven 'apache-maven-3.6.1'
+			maven 'apache-maven-3.6.1'
 		}
 
 		agent any
@@ -10,7 +10,7 @@ pipeline{
 			stage('Stage: Clean'){
 				steps{
 					echo 'Clean starting...'
-					powershell 'mvn clean'
+					powershell 'mvn -f happytrip/pom.xml clean'
 				}
 			}
 			
