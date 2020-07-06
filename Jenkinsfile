@@ -19,7 +19,7 @@ pipeline{
 				steps{
 				
 					echo 'Test starting...'
-					powershell 'mvn surefire:test'
+					powershell 'mvn test'
 					echo 'Test ended...'
 				}			 
 
